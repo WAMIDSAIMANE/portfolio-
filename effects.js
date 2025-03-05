@@ -339,35 +339,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
   
-  // 6. COUNTER ANIMATION
-  function initCounterAnimation() {
-    // Create a stats section
-    const skillsSection = document.querySelector(".skills")
-    if (skillsSection) {
-      const statsSection = document.createElement("div")
-      statsSection.className = "stats-section"
-      statsSection.innerHTML = `
-        <div class="container">
-          <div class="stats-container">
-            <div class="stat-item">
-              <div class="stat-number" data-count="5">0</div>
-              <div class="stat-title">Années d'expérience</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number" data-count="20">0</div>
-              <div class="stat-title">Projets terminés</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number" data-count="15">0</div>
-              <div class="stat-title">Clients satisfaits</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number" data-count="100">0</div>
-              <div class="stat-title">Tasse de café</div>
-            </div>
-          </div>
-        </div>
-      `
+
   
       // Insert stats section before skills section
       skillsSection.parentNode.insertBefore(statsSection, skillsSection)
@@ -448,8 +420,8 @@ document.addEventListener("DOMContentLoaded", () => {
       statNumbers.forEach((number) => {
         observer.observe(number)
       })
-    }
-  }
+    
+  
   
   // 7. CUSTOM CURSOR EFFECT
   function initCursorEffect() {
